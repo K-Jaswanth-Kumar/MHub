@@ -1,64 +1,104 @@
-# Marketing Hub
+# Magnet Marketing Hub
 
-## Overview
+## Introduction
 
-The **Marketing Hub** is a web platform designed for influencers and clients to manage promotional campaigns and track social media engagement. It integrates various social media APIs to fetch and display influencer content, engagement metrics, and performance data, helping clients and influencers collaborate more effectively.
+The **Magnet Marketing Hub** is a multi-tier platform for influencers and clients to streamline promotional campaigns and gain actionable insights. By leveraging cutting-edge technology, it provides real-time engagement data, seamless communication tools, and an analytics dashboard.
 
-## Live Demo
+## 🌐 Live Demo
 
-Check out the live demo of the Marketing Hub: [Live Link](https://fullstack-marketing-hub.vercel.app/)
+Explore the platform live: [Marketing Hub Live Demo](https://fullstack-marketing-hub.vercel.app/)
 
-## Features
+---
 
-- **Influencer Campaign Management:** Influencers can manage promotional campaigns, and clients can track them in real-time.
-- **Social Media Integration:** Integrates with Instagram, YouTube, and Twitter APIs to fetch engagement metrics, video performance data, and tweets.
-- **Analytics Dashboard:** View performance metrics like views, likes, and comments for promotional activities across platforms.
-- **Real-Time Data Fetching:** Continuously fetch updated data from social media platforms to keep campaigns up-to-date.
-- **Real-Time Communication:** Seamelessly communicate through the integrated chat application using socket.io.
+## ✨ Features
 
-## Technologies Used
+- **Campaign Management**: Simplify collaboration between influencers and clients with intuitive tools.
+- **Social Media Integration**: Fetch data directly from Instagram, YouTube, and Twitter APIs.
+- **Real-Time Communication**: Built-in chat system using `socket.io`.
+- **Analytics Dashboard**: Visualize metrics like views, likes, comments, and performance summaries.
 
-  <img src="https://scontent.fjga1-1.fna.fbcdn.net/v/t39.30808-1/301799419_456670456474672_6566292128822508765_n.png?stp=dst-png_s200x200&_nc_cat=100&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=IMsC2KpWP7kQ7kNvgF_FPgG&_nc_ht=scontent.fjga1-1.fna&_nc_gid=AIKrf8p-u5fyHUVDhyxJmYo&oh=00_AYD6ZXN7WmduSaU7fE2sVCuMbDixcs98Kl9MKyq0t9Rsng&oe=66E914C2" alt="React" width="50" height="50">
+---
 
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmyP1Fx_5N1ql7PIRnGFa2kx2_qmz7eimMXg&s" alt="JavaScript" width="50" height="50">
+## 🛠️ Getting Started
 
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYrNVwxlBhUzwBd6H4YqdJckckasr4N6PjQw&s" alt="Node.js" width="50" height="50">
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [MongoDB](https://www.mongodb.com/) (local or cloud)
 
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLkVVZFiwIEqwzm1SXhP7N7_dfIGchUww0w&s" alt="MongoDB" width="50" height="50">
+### Setup Instructions
 
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*i2fRBk3GsYLeUk_Rh7AzHw.png" alt="Express" width="50" height="50">
-  <img src="https://avatars.githubusercontent.com/u/10566080?s=280&v=4" alt="Express" width="50" height="50">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN38qIx9MEyOa4Yuz6G9lwZE4OOqJ2hi5twQ&s" alt="Express" width="50" height="50">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzG86oxsa3O5yMsabNoSO97BDHVct5HmYbA&s" alt="Express" width="50" height="50">
-- Instagram, YouTube, and Twitter APIs
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQanEhw1QT9iIas30wGv0fDtr-2UeevMQX9rA&s" alt="APIs" width="50" height="50">
+The project is divided into three components: **client**, **server**, and **socket**. Each component must be run individually.
 
-## How to Run
+---
 
-1. Clone the repository: `git clone https://github.com/genial-mani/marketing-hub.git`
-2. Navigate to the project directory: `cd fullstack-marketing-hub`
-3. Install dependencies: `npm install`
-4. Start the application: `npm run dev`
-5. Open your browser and visit `http://localhost:3000` or click on the link in the console.
+### 1. **Backend Setup (Server)**
+1. Navigate to the `server` directory:
+   ```bash
+   cd fullstack-marketing-hub/server
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the server:
+    ```bash
+    node index.js
+4. The server will run on http://localhost:5000.
+### 2. **Frontend Setup (Client)**
+1. Navigate to the `client` directory:
+   ```bash
+   cd fullstack-marketing-hub/client
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the cilent:
+    ```bash
+    npm start
+4. Open your browser at http://localhost:3000.
 
-## API Integration
+### 3. **Socket Server Setup**
+1. Navigate to the `socket` directory:
+   ```bash
+   cd fullstack-marketing-hub/socket
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the WebSocket server:
+    ```bash
+    node index.js
+4. The WebSocket server will run on http://localhost:4000.
 
-The platform utilizes APIs from **Instagram**, **YouTube**, and **Twitter** to fetch relevant engagement data, including views, likes, comments, and tweets related to influencer campaigns.
+---
 
-## Screenshots
+### Complete Setup:
+Run all three components (**server**, **client**, and **socket**) simultaneously in separate terminal windows.
 
-![Screenshot 1](client/src/Assets/Screenshot%202024-09-13%20021736.png)
-![Screenshot 2](client/src/Assets/Screenshot%202024-09-13%20021139.png)
-![Screenshot 3](client/src/Assets/Screenshot%202024-09-13%20021202.png)
-![Screenshot 4](client/src/Assets/Screenshot%202024-09-13%20021211.png)
+Access the platform at:  
+`http://localhost:3000`
 
-## Acknowledgements
+---
 
-- [React](https://reactjs.org/)
-- [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/)
-- [Instagram API](https://developers.facebook.com/docs/instagram-api/)
-- [YouTube Data API](https://developers.google.com/youtube/v3)
-- [Twitter API](https://developer.twitter.com/)
+## 📊 Features in Action
 
-`⭐ Star the repo if you like the project! 💕`
+- **Engagement Tracking**: Real-time metrics for likes, comments, and shares.
+- **Campaign Insights**: Detailed analytics across Instagram, YouTube, and Twitter.
+- **Seamless Collaboration**: Integrated chat for instant communication.
+
+---
+
+## 📸 Screenshots
+
+### Dashboard Overview
+![Dashboard Overview](client/src/Assets/Screenshot%202024-09-13%20021736.png)
+
+### Campaign Details
+![Campaign Details](client/src/Assets/Screenshot%202024-09-13%20021139.png)
+
+### Chat Application
+![Chat Application](client/src/Assets/Screenshot%202024-09-13%20021202.png)
+
+### Analytics Visualization
+![Analytics Visualization](client/src/Assets/Screenshot%202024-09-13%20021211.png)
+
+## 🚀 Wrapping Up
+
+With **Marketing Hub**, you now have a streamlined platform to manage campaigns, track performance metrics, and collaborate seamlessly. Start your journey towards smarter marketing today!
