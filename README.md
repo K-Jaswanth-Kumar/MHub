@@ -1,8 +1,8 @@
-# Magnet Marketing Hub
+# MHub
 
 ## Introduction
 
-The **Magnet Marketing Hub** is a multi-tier platform for influencers and clients to streamline promotional campaigns and gain actionable insights. By leveraging cutting-edge technology, it provides real-time engagement data, seamless communication tools, and an analytics dashboard.
+The **MHub** is a multi-tier platform for influencers and clients to streamline promotional campaigns and gain actionable insights. By leveraging cutting-edge technology, it provides real-time engagement data, seamless communication tools, and an analytics dashboard.
 
 ## 🌐 Live Demo
 
